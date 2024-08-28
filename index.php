@@ -1,3 +1,10 @@
+<?php
+
+session_start()
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,13 +30,26 @@
               <p>Your Information Is Always Updated</p>
            </div>
            <div class="user--info">
-               <div class="search--box">
-                   <i class="ri-search-line"></i>
-                   <input type="search" placeholder="Search">
-               </div>
-               <img src="image/photo_2024-05-26_20-58-05.jpg" alt="userinfo">
-           </div>
-       </div>
+                <?php if (isset($_SESSION['username'])): ?>
+                    <!-- User is logged in -->
+                    <div class="user--info-loggedin">
+                        <div class="search--box">
+                            <i class="ri-search-line"></i>
+                            <input type="search" placeholder="Search">
+                        </div>
+                        <img src="image/photo_2024-05-26_20-58-05.jpg" alt="userinfo">
+                        <a href="logout.php" class="btn btn-danger">Logout</a>
+                    </div>
+                <?php else: ?>
+                    <!-- User is not logged in -->
+                    <div class="user--info-notloggedin">
+                        <a href="login.php" id="signin-link" class="btn btn-primary">
+                        <i class="ri-id-card-fill"></i>                     Sign In</a>
+                         
+                    </div>
+                <?php endif; ?>
+            </div>
+        </div>
        <!-- Information Container -->
        <div class="information--container">
            <h3 class="main--title">Heng's Information</h3>
@@ -81,7 +101,7 @@
                         <div class="card-body card-body-custom">
                             <div class="icon">💻</div>
                             <h5 class="card-title">Object Oriented Programming</h5>
-                            <a href="https://www.youtube.com/watch?v=e4fwY9ZsxPw" class="btn btn-primary">View</a>
+                            <a href="https://www.youtube.com/watch?v=e4fwY9ZsxPw" target="_BLANK" class="btn btn-primary">View</a>
                         </div>
                     </div>
                 </div>
@@ -93,7 +113,7 @@
                             </div>
                             <h5 class="card-title">Data Structures And Algorithms</h5>
                             
-                            <a href="https://www.youtube.com/watch?v=0euvEdPwQnQ" class="btn btn-primary">View</a>
+                            <a href="https://www.youtube.com/watch?v=0euvEdPwQnQ"  target="_BLANK"class="btn btn-primary">View</a>
                         </div>
                     </div>
                 </div>
@@ -104,7 +124,7 @@
                             <i class="ri-macbook-line"></i>
                           </div>
                           <h5 class="card-title">Computer Networks</h5>
-                          <a href="https://www.youtube.com/watch?v=keeqnciDVOo" class="btn btn-primary">View</a>
+                          <a href="https://www.youtube.com/watch?v=keeqnciDVOo" target="_BLANK" class="btn btn-primary">View</a>
                       </div>
                   </div>
               </div>
@@ -115,7 +135,7 @@
                           <i class="ri-computer-line"></i>
                         </div>
                         <h5 class="card-title">System Analysis</h5>
-                        <a href="https://www.youtube.com/watch?v=rK0xSNQeHnU" class="btn btn-primary">View</a>
+                        <a href="https://www.youtube.com/watch?v=rK0xSNQeHnU" target="_BLANK" class="btn btn-primary">View</a>
                     </div>
                 </div>
             </div>

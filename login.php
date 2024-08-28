@@ -15,7 +15,7 @@
         <div class="container" id="signup" style="display:none">
             <div class="form-title">
                 <h1>Register</h1>
-                <form method="post" action ="">
+                <form method="post" action ="register.php">
                     <div class="input-group">
                         <i class="ri-user-5-fill"></i>
                         <input type="text" name="username" id="username" placeholder="Username" required>
@@ -64,7 +64,7 @@
         <div class="container" id="signin">
             <div class="form-title">
                 <h1>Sign In</h1>
-                <form method="post" action ="">
+                <form method="post" action ="login.php">
                     <div class="input-group">
                         <i class="ri-user-5-fill"></i>
                         <input type="text" name="username" id="username" placeholder="Username" required>
