@@ -6,7 +6,7 @@
 body {
     display: flex;
     margin: 0;
-    height: 110vh;
+    height: 120vh;
 }
 .navbar-brand {
     background: transparent;
@@ -24,16 +24,7 @@ body {
     bottom: 0;
     width: 110px;
 }
-body 
-{
-    padding: 0px;
-    background-image: url(image/Mountain\ Image.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 100vh;
 
-}
 
 .navbar-brand 
 {

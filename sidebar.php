@@ -3,7 +3,7 @@
        <div class="logo"></div>
        <ul class="menu">
            <li class="active">
-               <a href="#">
+               <a href="index.php">
                    <i class="ri-dashboard-3-fill"></i>
                    <span>Dashboard</span>
                </a>
