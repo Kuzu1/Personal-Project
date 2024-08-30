@@ -3,6 +3,13 @@
 session_start()
 ?>
 
+
+
+<?php
+
+session_start()
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,6 +42,26 @@ session_start()
               <p>Your Information Is Always Updated</p>
            </div>
            <div class="user--info">
+                <?php if (isset($_SESSION['username'])): ?>
+                    <!-- User is logged in -->
+                    <div class="user--info-loggedin">
+                        <div class="search--box">
+                            <i class="ri-search-line"></i>
+                            <input type="search" placeholder="Search">
+                        </div>
+                        <img src="image/photo_2024-05-26_20-58-05.jpg" alt="userinfo">
+                        <a href="logout.php" class="btn btn-danger">Logout</a>
+                    </div>
+                <?php else: ?>
+                    <!-- User is not logged in -->
+                    <div class="user--info-notloggedin">
+                        <a href="login.php" id="signin-link" class="btn btn-primary">
+                        <i class="ri-id-card-fill"></i>                     Sign In</a>
+                         
+                    </div>
+                <?php endif; ?>
+            </div>
+        </div>
                 <?php if (isset($_SESSION['username'])): ?>
                     <div class="user--info-loggedin">
                         <div class="search--box">
@@ -105,6 +132,7 @@ session_start()
                             <div class="icon">💻</div>
                             <h5 class="card-title">Object Oriented Programming</h5>
                             <a href="https://www.youtube.com/watch?v=e4fwY9ZsxPw" target="_BLANK" class="btn btn-primary">View</a>
+                            <a href="https://www.youtube.com/watch?v=e4fwY9ZsxPw" target="_BLANK" class="btn btn-primary">View</a>
                         </div>
                     </div>
                 </div>
@@ -117,6 +145,7 @@ session_start()
                             <h5 class="card-title">Data Structures And Algorithms</h5>
                             
                             <a href="https://www.youtube.com/watch?v=0euvEdPwQnQ"  target="_BLANK"class="btn btn-primary">View</a>
+                            <a href="https://www.youtube.com/watch?v=0euvEdPwQnQ"  target="_BLANK"class="btn btn-primary">View</a>
                         </div>
                     </div>
                 </div>
@@ -128,6 +157,7 @@ session_start()
                           </div>
                           <h5 class="card-title">Computer Networks</h5>
                           <a href="https://www.youtube.com/watch?v=keeqnciDVOo" target="_BLANK" class="btn btn-primary">View</a>
+                          <a href="https://www.youtube.com/watch?v=keeqnciDVOo" target="_BLANK" class="btn btn-primary">View</a>
                       </div>
                   </div>
               </div>
@@ -138,6 +168,7 @@ session_start()
                           <i class="ri-computer-line"></i>
                         </div>
                         <h5 class="card-title">System Analysis</h5>
+                        <a href="https://www.youtube.com/watch?v=rK0xSNQeHnU" target="_BLANK" class="btn btn-primary">View</a>
                         <a href="https://www.youtube.com/watch?v=rK0xSNQeHnU" target="_BLANK" class="btn btn-primary">View</a>
                     </div>
                 </div>
