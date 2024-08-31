@@ -14,6 +14,7 @@
 <?php include 'sidebar.php'; ?>
 
 
+</body>
 
 </body>
 </html>

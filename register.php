@@ -37,4 +37,3 @@ if (isset($_POST['signup'])) {
         echo "Passwords do not match!";
     }
 }
-?>

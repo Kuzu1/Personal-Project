@@ -26,4 +26,3 @@ if (isset($_POST['signin'])) {
         echo "Invalid username or password";
     }
 }
-?>

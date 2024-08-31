@@ -5,10 +5,6 @@ session_start()
 
 
 
-<?php
-
-session_start()
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -62,23 +58,9 @@ session_start()
                 <?php endif; ?>
             </div>
         </div>
-                <?php if (isset($_SESSION['username'])): ?>
-                    <div class="user--info-loggedin">
-                        <div class="search--box">
-                            <i class="ri-search-line"></i>
-                            <input type="search" placeholder="Search">
-                        </div>
-                        <img src="image/photo_2024-05-26_20-58-05.jpg" alt="userinfo">
-                        <a href="logout.php" class="btn btn-danger">Logout</a>
-                    </div>
-                <?php else: ?>
-                    <div class="user--info-notloggedin">
-                        <a href="login.php" id="signin-link" class="btn btn-primary">
-                        <i class="ri-id-card-fill"></i>Sign In</a>
-                    </div>
-                <?php endif; ?>
-            </div>
-        </div>
+        
+           
+
 
        <!-- Information Container -->
        <div class="information--container">
