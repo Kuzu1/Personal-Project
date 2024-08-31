@@ -6,8 +6,8 @@ function handleClientLoad() {
 // Initialize the Google API Client
 function initClient() {
     gapi.client.init({
-        apiKey: 'AIzaSyDPNLCMhbzgEf3bgfa_qlQMMb4oSKEyTHo',  // Replace with your actual API Key
-        clientId: '953210793653-0h8kd141qo6ngkm9kitit40clbmiqv3c.apps.googleusercontent.com',  // Replace with your actual Client ID
+        apiKey: 'API_KEY',  // Replace with your actual API Key
+        clientId: 'CLIENT_ID',  // Replace with your actual Client ID
         discoveryDocs: ["https://classroom.googleapis.com/$discovery/rest?version=v1"],
         scope: "https://www.googleapis.com/auth/classroom.courses.readonly"
     }).then(() => {
