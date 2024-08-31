@@ -1,0 +1,14 @@
+{
+    "name": "heng/personal-project",
+    "description": "a personal project to integrate google classroom api",
+    "authors": [
+        {
+            "name": "Heng",
+            "email": "zachcotton168@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "google/apiclient": "^2.17"
+    }
+}
